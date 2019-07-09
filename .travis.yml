@@ -5,3 +5,10 @@ r:
   - oldrel
   - release
   - devel
+  
+notifications:
+  email:
+    recipients:
+      - isubirana@imim.es
+    on_success: change
+    on_failure: change
