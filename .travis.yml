@@ -6,9 +6,9 @@ r:
   - release
   - devel
   
-before_cache: Rscript -e 'remotes::install_cran("pkgdown")'  
+before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
 deploy:
   provider: script
   script: Rscript -e 'pkgdown::deploy_site_github()'
-  skip_cleanup: true  
+  skip_cleanup: true 
   
